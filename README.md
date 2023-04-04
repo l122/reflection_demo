@@ -9,6 +9,6 @@ Credit to [DotNet Core Central](https://www.youtube.com/watch?v=MqJ_JjCV-9M).
 
 ## How to open project in Windows 10
 
-- clone the repository to your computer;
+- clone the repository;
 - using Visual Studio open ReflectionDemo.sln;
 - run with F5.

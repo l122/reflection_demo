@@ -14,15 +14,10 @@ public class Program
     static void Main(string[] args)
     {
         const string line = "=====================================";
-        var assembly = Assembly.LoadFrom("C:\\Users\\Me\\source\\repos\\ReflectionDemo\\PrintAll\\bin\\Debug\\net7.0\\PrintAll.dll");
+        var assembly = typeof(CustomPrint).Assembly;
 
         foreach (var type in assembly.GetTypes().Where(p => p.Equals(typeof(CustomPrint))))
         {
-            //if (!type.Equals(typeof(CustomPrint)))
-            //{
-            //    continue;
-            //}
-
             Console.WriteLine($"Type: {type.Name}");
             Console.WriteLine(line);
 
